@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+body {
+    margin: 0;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    background-color: black;
+    z-index: 2;
+}
+.logo {
+    font-family: sans-serif;
+    color: white;
+    font-size: 2.2em;
+}
+header nav button {
+    background-color: transparent;
+    border: 0;
+    font-family: quicksand;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition-delay: 0s;
+    transition-duration: 1s;
+}
+header nav button:hover {
+    color: yellowgreen;
+    transform: translate(0px, -4px);
+    text-shadow: 0 6px 6px rgba(0, 0, 0, 1);
+}
+.order-online {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    background-color: yellowgreen;
+    color: white;
+    font-family: montserrat;
+    cursor: pointer;
+    transition: 0.6s;
+    font-size: x-large;
+}
+.order-online:hover {
+    transform: translate(0px, -4px);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.waves {
+    transform: rotate(180deg) scale(1, 0.2);
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -40px; /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+    margin-top: 40px;
+}
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 4s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 17s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+.starting {
+    background-image: url(/SyntHacks2022/240_F_291452535_HdHqqsV0LXee36w2DAAPeW6LV2IjLsUT.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.text {
+    color: white;
+    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: smooch;
+    font-size: 10vh;
+    margin-left: 2vh;
+    position: relative;
+    top: 45%;
+}
+
+.caption {
+    font-family: sans-serif;
+    font-size: 4vh;
+}
